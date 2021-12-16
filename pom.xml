@@ -7,10 +7,17 @@
     <groupId>com.example</groupId>
     <artifactId>parent-starter-test-proj</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>data-layer</module>
+        <module>app-layer</module>
+        <module>JavaPractise</module>
+        <module>data-service</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
-    
+
 </project>
