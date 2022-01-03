@@ -20,8 +20,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     private MyUserDetailsService userDetailsService;
 
-    /*@Autowired
-    private SecurityFilter customerFilter;*/
+    @Autowired
+    private SecurityFilter customerFilter;
 
     @Override
     protected void configure (AuthenticationManagerBuilder auth) throws Exception {
@@ -29,7 +29,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 
 
-    /*@Override
+    @Override
     protected void configure (HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
@@ -47,7 +47,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         ;
 
-    }*/
+    }
 
     @Bean
     public AuthenticationManager authenticationManager() throws Exception {
