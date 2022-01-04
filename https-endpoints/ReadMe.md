@@ -8,3 +8,7 @@ keytool -genkey -alias skipper -keyalg RSA -keystore skipper.keystore \
 -keypass skipper -storepass skipper
 
 Now, take a look at how maaping is happeing at Spring application properties.
+
+Not saving the keystore file.
+
+reference from : https://docs.spring.io/spring-cloud-skipper/docs/1.0.0.BUILD-SNAPSHOT/reference/html/configuration-security-enabling-https.html
