@@ -6,9 +6,11 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 import java.lang.annotation.*;
 
-@Documented
+/**
+ * Provide the custom validator class ( BrandPrefixValidator.class )  that validates the FILED annotated with BrandPrefix
+ */
 @Constraint(validatedBy = BrandPrefixValidator.class)
-@Target({ElementType.FIELD,ElementType.METHOD})
+@Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface BrandPrefix {
 

@@ -1,15 +1,14 @@
 package com.validation.formvalidation.validation.validators;
 
 import com.validation.formvalidation.validation.annotations.BrandPrefix;
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.lang.annotation.Annotation;
 
+/**
+ * It is required to override the isValid method of Parent class to provide
+ * validation implementation.
+ */
 public class BrandPrefixValidator implements ConstraintValidator<BrandPrefix, String>  {
-
-    @Override
-    public void initialize (BrandPrefix constraintAnnotation) {}
 
     @Override
     public boolean isValid (String brand, ConstraintValidatorContext constraintValidatorContext) {
